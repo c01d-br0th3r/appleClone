@@ -23,6 +23,10 @@ a {
 
 nav {
   padding: 0 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .global-nav {
@@ -32,6 +36,7 @@ nav {
 .local-nav {
   height: 52px;
   border-bottom: 1px solid #e2e2e2;
+  top: 45px;
 }
 
 .global-nav-links,
@@ -77,6 +82,8 @@ nav {
   justify-content: center;
   height: 3em;
   font-size: 2.5rem;
+  opacity: 0;
+  top: 35vh;
 }
 
 .main-message p {
@@ -122,6 +129,16 @@ nav {
   background-color: rgb(29, 29, 31);
 }
 
+#scroll-section-2 .b {
+  top: 10%;
+  left: 40%;
+}
+
+#scroll-section-2 .c {
+  top: 15%;
+  left: 45%;
+}
+
 .mid-message {
   max-width: 1000px;
   margin: 0 auto;
@@ -152,6 +169,20 @@ nav {
   background-color: darkorange;
 }
 
+.sticky-elem {
+  display: none;
+  position: fixed;
+  left: 0;
+  width: 100%;
+}
+
+#show-scene-0 #scroll-section-0 .sticky-elem,
+#show-scene-1 #scroll-section-1 .sticky-elem,
+#show-scene-2 #scroll-section-2 .sticky-elem,
+#show-scene-3 #scroll-section-3 .sticky-elem {
+  display: block;
+}
+
 @media (min-width: 1024px) {
   #scroll-section-0 h1 {
     font-size: 9vw;
@@ -173,6 +204,14 @@ nav {
   }
   .desc-message {
     width: 20%;
+  }
+  #scroll-section-2 .b {
+    top: 20%;
+    left: 53%;
+  }
+
+  #scroll-section-2 .c {
+    left: 55%;
   }
   .mid-message {
     font-size: 4vw;
