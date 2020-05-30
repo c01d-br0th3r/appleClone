@@ -121,6 +121,7 @@ nav {
 .desc-message {
   width: 50%;
   font-weight: 700;
+  opacity: 0;
 }
 
 .pin {
